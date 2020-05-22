@@ -9,7 +9,7 @@ If you feel any data you need is missing, please open a issue here.
 
 ## Tables
 
-### civid_registry_deaths.csv
+### civil_registry_deaths.csv
 Scrap of death registries at https://transparencia.registrocivil.org.br/registros
 
 Daily entries, contains all the cities and states
@@ -23,7 +23,7 @@ Daily entries, contains all the cities and states
 | city_ibge_code | integer | city ibge code, if empty then deaths_total are state-wise |
 | deaths_total | integer | total death registries at date |
 
-### civid_registry_covid_xxxxx.csv
+### civil_registry_covid_xxxxx.csv
 Scrap of covid-related deaths at https://transparencia.registrocivil.org.br/registral-covid
 
 Daily entries, there are multiple sub-types, see below.
@@ -46,13 +46,13 @@ Daily entries, there are multiple sub-types, see below.
 | deaths_others | string | Number of others deaths |
 | deaths_covid19 | string | Number of covid-19 deaths |
 
-#### civid_registry_covid_states.csv
+#### civil_registry_covid_states.csv
 Full table for all the 27 brazilian states (each place, gender and age group)
 
-#### civid_registry_covid_top_cities.csv
+#### civil_registry_covid_top_cities.csv
 Full table for all the brazilian cities over 500,000 population, about 47 (each place, gender and age group)
 
-#### civid_registry_covid_other_cities.csv
+#### civil_registry_covid_other_cities.csv
 Partial table for all the brazilian cities over from 100,000 to 500,0000 population, about 240 (each place, no gender or age group)
 
 ## IBGE codes
