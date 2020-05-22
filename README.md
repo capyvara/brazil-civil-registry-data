@@ -12,11 +12,12 @@ If you feel any data you need is missing, please open a issue here.
 ### civil_registry_deaths.csv
 Scrap of death registries at https://transparencia.registrocivil.org.br/registros
 
-Daily entries, contains all the cities and states
+Monthly entries, contains all the cities and states
 
 | name | type | notes |
 |-----------------|---------|-----------------------------------------------------|
-| date | date | yyyy-mm-dd |
+| start_date | date | yyyy-mm-dd |
+| end_date | date | yyyy-mm-dd |
 | state | string | UF code |
 | state_ibge_code | integer | state ibge code |
 | city | string | city name, if empty then deaths_total are state-wise |
