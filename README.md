@@ -26,6 +26,7 @@ Monthly entries, contains all the cities and states
 | city | string | city name, if empty then deaths_total are state-wise |
 | city_ibge_code | integer | city ibge code, if empty then deaths_total are state-wise |
 | deaths_total | integer | total death registries at date |
+| created_at | datetime | yyyy-mm-dd hh:mm<br>approximated time the request to the server was made |
 
 ### civil_registry_covid_xxxxx.csv
 Scrap of covid-related deaths at https://transparencia.registrocivil.org.br/registral-covid
@@ -49,6 +50,7 @@ Daily entries, there are multiple sub-types, see below.
 | deaths_indeterminate | string | Number of indeterminate deaths |
 | deaths_others | string | Number of others deaths |
 | deaths_covid19 | string | Number of covid-19 deaths |
+| created_at | datetime | yyyy-mm-dd hh:mm<br>approximated time the data was produced according to the server |
 
 #### civil_registry_covid_states.csv
 Full table for all the 27 brazilian states (each place, gender and age group)
