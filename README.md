@@ -54,10 +54,10 @@ Daily entries, there are multiple sub-types, see below.
 Full table for all the 27 brazilian states (each place, gender and age group)
 
 #### (WIP) civil_registry_covid_top_cities.csv
-Full table for all the brazilian cities over 500,000 population, about 47 (each death place, gender and age group)
+Full table for all the brazilian cities over 500,000 population (2019), about 47 (each death place, gender and age group)
 
 #### civil_registry_covid_cities.csv
-Partial table for all the brazilian cities over 100,000 population, about 287 (each death place, no gender or age group)
+Partial table for all the brazilian cities over 100,000 population (2019), about 287 (each death place, no gender or age group)
 
 ## IBGE codes
 https://www.ibge.gov.br/explica/codigos-dos-municipios.php
