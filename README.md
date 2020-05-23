@@ -3,12 +3,12 @@ Raw scrapings of https://transparencia.registrocivil.org.br/
 
 The idea is that if we minimize the number of people scraping their website, everyone will benefit, so this repo will try to keep fine coarsed data as possible. Due to the design of their website extracting detailed information may be costly.
 
-If you feel any data you need is missing, please open a issue here.
+If you feel any data you need is missing, please open an issue here.
 
 **Notice:** 
 This repo is just a copy of the data available at the site and isn't responsible for it, please read their documentation.
 
-Also, the site scrapping is a continuous, incremental and lengthy process, and may introduce additional errors in the data, beware of that when analyzing the data.
+Also, the site scrapping is a continuous, incremental and lengthy process, and may introduce additional errors in the data, beware of that when analyzing it.
 
 ## Tables
 
@@ -69,5 +69,8 @@ Please mention the original source and this repo.
 
 ## More information, special thanks
 - Brasil.IO: https://brasil.io/dataset/covid19/obito_cartorio/
+- Contribute to COVID-19 on Brasil.IO: https://github.com/turicas/covid19-br
 - Portal da Transparência do Registro Civil: https://transparencia.registrocivil.org.br/
+- Scrapping code is currently kept on a private repo to prevent abuse, but if you are a researcher and want access or more information, contact me at https://twitter.com/capyvara
+
 
