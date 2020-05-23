@@ -5,7 +5,10 @@ The idea is that if we minimize the number of people scraping their website, eve
 
 If you feel any data you need is missing, please open a issue here.
 
-**Notice** This repo is just a copy of the data available at the site and isn't responsible for it, please read their documentation.
+**Notice:** 
+This repo is just a copy of the data available at the site and isn't responsible for it, please read their documentation.
+
+Also, the site scrapping is a continuous, incremental and lengthy process, and may introduce additional errors in the data, beware of that when analyzing the data.
 
 ## Tables
 
