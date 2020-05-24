@@ -55,7 +55,7 @@ Daily entries, there are multiple sub-types, see below.
 #### civil_registry_covid_states.csv
 Full table for all the 27 brazilian states (each place, gender and age group)
 
-#### (WIP) civil_registry_covid_top_cities.csv
+#### civil_registry_covid_top_cities.csv
 Full table for all the brazilian cities over 500,000 population (2019), about 47 (each death place, gender and age group)
 
 #### civil_registry_covid_cities.csv
