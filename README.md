@@ -1,7 +1,7 @@
 # Brazil Civil Registry Data
 Raw scrapings of https://transparencia.registrocivil.org.br/
 
-The idea is that if we minimize the number of people scraping their website, everyone will benefit, so this repo will try to keep fine coarsed data as possible. Due to the design of their website extracting detailed information may be costly.
+The idea is that if we minimize the number of people scraping their website, everyone will benefit, so this repo will try to keep fine grained data as possible. Due to the design of their website extracting detailed information may be costly.
 
 If you feel any data you need is missing, please open an issue here.
 
@@ -40,7 +40,7 @@ Daily entries, there are multiple sub-types, see below.
 | state_ibge_code | integer | state ibge code |
 | city | string | [optional] city name |
 | city_ibge_code | integer | [optional] city ibge code |
-| places | string | [optional] place(s) where the deaths occured, comma separated<br>(hospital, home, public, others) |
+| places | string | [optional] place(s) where the deaths occurred, comma separated<br>(hospital, home, public, others) |
 | gender | string | [optional] F, M |
 | age_group | string | [optional] age group <br>(9-, 10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-99, 100+, NA) |
 | deaths_sars | string | Number of SARS deaths |
@@ -53,13 +53,16 @@ Daily entries, there are multiple sub-types, see below.
 | created_at | datetime | yyyy-mm-dd hh:mm<br>approximated time the data was produced according to the server |
 
 #### civil_registry_covid_states.csv
-Full table for all the 27 brazilian states (each place, gender and age group)
-
-#### civil_registry_covid_top_cities.csv
-Full table for all the brazilian cities over 500,000 population (2019), about 47 (each death place, gender and age group)
+Partial table for all the 27 brazilian states (no gender or age group)
 
 #### civil_registry_covid_cities.csv
-Partial table for all the brazilian cities over 100,000 population (2019), about 287 (each death place, no gender or age group)
+Partial table for all the brazilian cities over 100,000 population (2019), about 287 (no gender or age group)
+
+#### civil_registry_covid_states_detailed.csv
+Full table for all the 27 brazilian states
+
+#### civil_registry_covid_cities_detailed.csv
+Full table for all the brazilian cities over 500,000 population (2019), about 47 
 
 ## IBGE codes
 https://www.ibge.gov.br/explica/codigos-dos-municipios.php
