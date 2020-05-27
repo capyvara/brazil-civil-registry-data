@@ -18,7 +18,7 @@ elif [[ "$OLD_FILE" =~ covid_states ]]; then
 elif [[ "$OLD_FILE" =~ covid_cities ]]; then
     csvdiff $OLD_FILE $NEW_FILE -p 0,1,2,3,4,5 --ignore-columns 13
 elif [[ "$OLD_FILE" =~ covid_states_detailed ]]; then
-    csvdiff $OLD_FILE $NEW_FILE -p 0,1,2,3,4 --ignore-columns 11
+    csvdiff $OLD_FILE $NEW_FILE -p 0,1,2,3,4,5 --ignore-columns 13
 elif [[ "$OLD_FILE" =~ covid_cities_detailed ]]; then
     csvdiff $OLD_FILE $NEW_FILE -p 0,1,2,3,4,5,6,7 --ignore-columns 15
 else
