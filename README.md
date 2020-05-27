@@ -73,9 +73,14 @@ https://www.ibge.gov.br/explica/codigos-dos-municipios.php
 Please mention the original source and this repo.
 
 ## More information, special thanks
-- Brasil.IO: https://brasil.io/dataset/covid19/obito_cartorio/
-- Contribute to COVID-19 on Brasil.IO: https://github.com/turicas/covid19-br
+- [Brasil.IO](https://brasil.io): 
+    - https://brasil.io/dataset/covid19/obito_cartorio/
+    - There you can find the equivalent of the civil_registry_covid_states.csv (except no death places) in a easier to digest format
+    - Here you can contribute to it: https://github.com/turicas/covid19-br
+    - There are plans to bring all the data on this repo to it in a near future
+
 - Portal da Transparência do Registro Civil: https://transparencia.registrocivil.org.br/
+
 - Scrapping code is currently kept on a private repo to prevent abuse, but if you are a researcher and want access or more information, contact me at https://twitter.com/capyvara
 
 
