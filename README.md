@@ -15,7 +15,7 @@ Also, the site scrapping is a continuous, incremental and lengthy process, and m
 ### civil_registry_deaths.csv
 Scrap of death registries at https://transparencia.registrocivil.org.br/registros
 
-Monthly entries, contains all the cities and states
+Monthly entries, contains all the cities and states, from 2015 to 2020
 
 | name | type | notes |
 |-----------------|---------|-----------------------------------------------------|
@@ -53,16 +53,16 @@ Daily entries, there are multiple sub-types, see below.
 | created_at | datetime | yyyy-mm-dd hh:mm<br>approximated time the data was produced according to the server |
 
 #### civil_registry_covid_states.csv
-Partial table for all the 27 brazilian states (no gender or age group)
+Partial table for all the 27 brazilian states (no gender or age group), from 2018 to 2020
 
 #### civil_registry_covid_cities.csv
-Partial table for all the brazilian cities over 100,000 population (2019), about 287 (no gender or age group)
+Partial table for all the brazilian cities over 100,000 population (2019), about 287 (no gender or age group), from 2018 to 2020
 
 #### civil_registry_covid_states_detailed.csv
-Full table for all the 27 brazilian states
+Full table for all the 27 brazilian states, 2019 and 2020
 
 #### civil_registry_covid_cities_detailed.csv
-Full table for all the brazilian cities over 500,000 population (2019), about 47 
+Full table for all the brazilian cities over 500,000 population (2019), about 47, 2019 and 2020
 
 ## IBGE codes
 https://www.ibge.gov.br/explica/codigos-dos-municipios.php
