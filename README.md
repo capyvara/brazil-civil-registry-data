@@ -64,6 +64,10 @@ Full table for all the 27 brazilian states, 2019 and 2020
 #### civil_registry_covid_cities_detailed.csv
 Full table for all the brazilian cities over 500,000 population (2019), about 47, 2019 and 2020
 
+## Changelog
+### 2020-06-13
+In order to fix #3, the city of "Brasilia" (ibge_code=5300108) now contains the data for the whole state "DF" (ibge_code =53), as committed at a043e3d32b3f3111a72712cf0243fcc9786d858d
+
 ## IBGE codes
 https://www.ibge.gov.br/explica/codigos-dos-municipios.php
 
