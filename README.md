@@ -65,6 +65,9 @@ Full table for all the 27 brazilian states, 2019 and 2020
 Full table for all the brazilian cities over 500,000 population (2019), about 47, 2019 and 2020
 
 ## Changelog
+### 2020-06-21
+Fixes [#4](https://github.com/capyvara/brazil-civil-registry-data/issues/4) by adding capital cities to detailed, as commited at [fbef16](https://github.com/capyvara/brazil-civil-registry-data/commit/fbef16088e8ca5116ed60b61cf5f498e8e7e0803)
+
 ### 2020-06-13
 In order to fix [#3](https://github.com/capyvara/brazil-civil-registry-data/issues/3), the city of "Brasilia" (ibge_code=5300108) now contains the data for the whole state "DF" (ibge_code =53), as committed at [a043e3d3](https://github.com/capyvara/brazil-civil-registry-data/commit/a043e3d32b3f3111a72712cf0243fcc9786d858d) 
 
