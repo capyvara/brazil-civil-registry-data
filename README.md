@@ -43,14 +43,29 @@ Daily entries, there are multiple sub-types, see below.
 | places | string | [optional] place(s) where the deaths occurred, comma separated<br>(hospital, home, public, others) |
 | gender | string | [optional] F, M |
 | age_group | string | [optional] age group <br>(9-, 10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-99, 100+, NA) |
-| deaths_sars | string | Number of SARS deaths |
-| deaths_pneumonia | string | Number of pneumonia deaths |
-| deaths_respiratory_failure | string | Number of respiratory failure deaths |
-| deaths_septicemia | string | Number of septicemia deaths |
-| deaths_indeterminate | string | Number of indeterminate deaths |
-| deaths_others | string | Number of others deaths |
-| deaths_covid19 | string | Number of covid-19 deaths |
+| deaths_sars | integer | Number of SARS deaths (SRAG) |
+| deaths_pneumonia | integer | Number of pneumonia deaths (PNEUMONIA) |
+| deaths_respiratory_failure | integer | Number of respiratory failure deaths (INSUFICIENCIA_RESPIRATORIA) |
+| deaths_septicemia | integer | Number of septicemia deaths (SEPTICEMIA) |
+| deaths_indeterminate | integer | Number of indeterminate deaths (INDETERMINADA) |
+| deaths_others | integer | Number of others deaths (OUTRAS) |
+| deaths_covid19 | integer | Number of COVID-19 only deaths (COVID) |
+| deaths_stroke | integer | Number of stroke deaths (AVC) |
+| deaths_stroke_covid19 | integer | Number of stroke deaths with COVID-19 (COVID_AVC) |
+| deaths_cardiopathy | integer | Number of cardiopathy deaths (CARDIOPATIA) |
+| deaths_cardiogenic_shock | integer | Number of cardiogenic shock deaths (CHOQUE_CARD) |
+| deaths_heart_attack | integer | Number of heart attack deaths (INFARTO) |
+| deaths_heart_attack_covid19 | integer | Number of heart attack deaths with COVID-19 (COVID_INFARTO) |
+| deaths_sudden_cardiac | integer | Number of sudden cardiac arrest deaths (SUBITA) |
 | created_at | datetime | yyyy-mm-dd hh:mm<br>approximated time the data was produced according to the server |
+
+**Notice:** 
+On the site, there are some displayed aggregations:
+
+| Name | Aggregation |
+| --- | --- |
+| COVID-19 | COVID + COVID_AVC + COVID_INFARTO |
+| Demais óbitos cardiovasculares | CARDIOPATIA + CHOQUE_CARD + SUBITA |
 
 #### civil_registry_covid_states.csv
 Partial table for all the 27 brazilian states (no gender or age group), from 2018 to 2020
@@ -65,6 +80,11 @@ Full table for all the 27 brazilian states, 2019 and 2020
 Full table for all the brazilian cities over 500,000 population (2019), about 47, 2019 and 2020
 
 ## Changelog
+### 2020-06-26
+Added cardiac causes, 7 more columns, from deaths_stroke to deaths_sudden_cardiac, as committed at [cd7a6b3](https://github.com/capyvara/brazil-civil-registry-data/commit/cd7a6b335398ea6b3ebf6beb45249fd1ee179b5d)
+
+**Notice**: COVID-19 deaths are now split in three columns (deaths_covid19, deaths_stroke_covid19, deaths_heart_attack_covid19), see table above.
+
 ### 2020-06-21
 Fixes [#4](https://github.com/capyvara/brazil-civil-registry-data/issues/4) by adding capital cities to detailed, as commited at [fbef16](https://github.com/capyvara/brazil-civil-registry-data/commit/fbef16088e8ca5116ed60b61cf5f498e8e7e0803)
 
