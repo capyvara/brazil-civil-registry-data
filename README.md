@@ -85,6 +85,9 @@ Added cardiac causes, 7 more columns, from deaths_stroke to deaths_sudden_cardia
 
 **Notice**: COVID-19 deaths are now split in three columns (deaths_covid19, deaths_stroke_covid19, deaths_heart_attack_covid19), see table above.
 
+### 2021-01-16
+Now includes year 2021, note that due to 2020 being a leap year, on years 2019 and 2021 detailed scraps of 29-Feb actually uses the data from 28-Feb.
+
 ### 2020-06-21
 Fixes [#4](https://github.com/capyvara/brazil-civil-registry-data/issues/4) by adding capital cities to detailed, as commited at [fbef16](https://github.com/capyvara/brazil-civil-registry-data/commit/fbef16088e8ca5116ed60b61cf5f498e8e7e0803)
 
