@@ -13,7 +13,7 @@ Also, the site scrapping is a continuous, incremental and lengthy process, and m
 ## Tables
 
 ### civil_registry_deaths.csv
-Scrap of death registries at https://transparencia.registrocivil.org.br/registros
+Scrap of all-cause death registries at https://transparencia.registrocivil.org.br/registros
 
 Monthly entries, contains all the cities and states, from 2015 to 2020
 
@@ -29,7 +29,7 @@ Monthly entries, contains all the cities and states, from 2015 to 2020
 | created_at | datetime | yyyy-mm-dd hh:mm<br>approximated time the request to the server was made |
 
 ### civil_registry_covid_xxxxx.csv
-Scrap of covid-related deaths at https://transparencia.registrocivil.org.br/registral-covid
+Scrap of natural-cause deaths at https://transparencia.registrocivil.org.br/especial-covid (from Causas Cardiacas)
 
 Daily entries, there are multiple sub-types, see below.
 
@@ -64,20 +64,20 @@ On the site, there are some displayed aggregations:
 
 | Name | Aggregation |
 | --- | --- |
-| COVID-19 | COVID + COVID_AVC + COVID_INFARTO |
-| Demais óbitos cardiovasculares | CARDIOPATIA + CHOQUE_CARD + SUBITA |
+| COVID-19 | deaths_covid19 + deaths_stroke_covid19 + deaths_heart_attack_covid19 |
+| Demais óbitos cardiovasculares | deaths_cardiopathy + deaths_cardiogenic_shock + deaths_sudden_cardiac |
 
 #### civil_registry_covid_states.csv
-Partial table for all the 27 brazilian states (no gender or age group), from 2018+
+Table (no gender nor age group) for all the 27 brazilian states, since 2018
 
 #### civil_registry_covid_cities.csv
-Partial table for all the brazilian cities over 100,000 population (2019), about 287 (no gender or age group), from 2018+
+Table (no gender nor age group) for brazilian cities over 100,000 population and capitals (about 317), since 2018
 
 #### civil_registry_covid_states_detailed.csv
-Full table for all the 27 brazilian states, 2019 and 2020
+Table (with gender and age group) for all the 27 brazilian states, since 2019
 
 #### civil_registry_covid_cities_detailed.csv
-Full table for all the brazilian cities over 500,000 population (2019), about 47, 2019+
+Table (with gender and age group) for brazilian cities over 500,000 population and capitals (about 56), since 2019
 
 ## Changelog
 ### 2021-01-16
