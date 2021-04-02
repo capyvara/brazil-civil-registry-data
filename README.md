@@ -31,6 +31,8 @@ Monthly entries, contains all the cities and states, from 2015 to 2020
 ### civil_registry_covid_xxxxx.csv
 Scrap of natural-cause deaths at https://transparencia.registrocivil.org.br/especial-covid (from Causas Cardiacas)
 
+**Notice** : The name covid comes from their panel, actually the table contains many natural causes, not only covid deaths.
+
 Daily entries, there are multiple sub-types, see below.
 
 | name | type | notes |
