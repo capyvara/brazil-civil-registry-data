@@ -83,7 +83,7 @@ Table (with gender and age group) for brazilian cities over 500,000 population a
 
 ## Changelog
 ### 2021-01-16
-Now includes year 2021, note that due to 2020 being a leap year, on years 2019 and 2021 detailed scraps of 29-Feb actually uses the data from 28-Feb.
+Now includes year 2021
 
 ### 2020-06-26
 Added cardiac causes, 7 more columns, from deaths_stroke to deaths_sudden_cardiac, as committed at [cd7a6b3](https://github.com/capyvara/brazil-civil-registry-data/commit/cd7a6b335398ea6b3ebf6beb45249fd1ee179b5d)
