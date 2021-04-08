@@ -13,35 +13,35 @@ Also, the site scrapping is a continuous, incremental and lengthy process, and m
 ## Tables
 
 ### civil_registry_deaths.csv
-Scrap of all-cause death registries at https://transparencia.registrocivil.org.br/registros
+Scrap of all-cause death registrations at https://transparencia.registrocivil.org.br/registros
 
-Monthly entries, contains all the cities and states, from 2015 to 2020
+Monthly entries, contains all the reported cities and states, since 2015
 
 | name | type | notes |
 |-----------------|---------|-----------------------------------------------------|
-| start_date | date | yyyy-mm-dd |
-| end_date | date | yyyy-mm-dd |
-| state | string | UF code |
-| state_ibge_code | integer | state ibge code |
-| city | string | city name, if empty then deaths_total are state-wise |
-| city_ibge_code | integer | city ibge code, if empty then deaths_total are state-wise |
-| deaths_total | integer | total death registries at date |
-| created_at | datetime | yyyy-mm-dd hh:mm<br>approximated time the request to the server was made |
+| start_date | date | yyyy-mm-dd<br>Registration date period start (inclusive) |
+| end_date | date | yyyy-mm-dd<br>Registration date period end (inclusive) |
+| state | string | Registration UF code |
+| state_ibge_code | integer | Registration state ibge code |
+| city | string | Registration city name, if empty then deaths_total are state-wise |
+| city_ibge_code | integer | Registration city ibge code, if empty then deaths_total are state-wise |
+| deaths_total | integer | Total death registered at date |
+| created_at | datetime | yyyy-mm-dd hh:mm<br>Approximated time the request to the server was made |
 
 ### civil_registry_covid_xxxxx.csv
 Scrap of natural-cause deaths at https://transparencia.registrocivil.org.br/especial-covid (from Causas Cardiacas)
 
-**Notice** : The name covid comes from their panel, actually the table contains many natural causes, not only covid deaths.
+**Notice** : The name covid comes from their panel, actually the table contains natural causes, not only covid deaths.
 
 Daily entries, there are multiple sub-types, see below.
 
 | name | type | notes |
 |-----------------|---------|-----------------------------------------------------|
-| date | date | yyyy-mm-dd |
-| state | string | UF code |
-| state_ibge_code | integer | state ibge code |
-| city | string | [optional] city name |
-| city_ibge_code | integer | [optional] city ibge code |
+| date | date | yyyy-mm-dd<br>Ocurrence date | 
+| state | string | Ocurrence UF code |
+| state_ibge_code | integer | Ocurrence state ibge code |
+| city | string | [optional] Ocurrence city name |
+| city_ibge_code | integer | [optional] Ocurrence city ibge code |
 | places | string | [optional] place(s) where the deaths occurred, comma separated<br>(hospital, home, public, others) |
 | gender | string | [optional] F, M |
 | age_group | string | [optional] age group <br>(9-, 10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-99, 100+, NA) |
