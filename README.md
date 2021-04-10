@@ -12,10 +12,10 @@ Also, the site scrapping is a continuous, incremental and lengthy process, and m
 
 ## Tables
 
-### civil_registry_deaths.csv
-Scrap of all-cause death registrations at https://transparencia.registrocivil.org.br/registros
+### civil_registry_xxxxx.csv
+Registrations at https://transparencia.registrocivil.org.br/registros
 
-Monthly entries, contains all the reported cities and states, since 2015
+Monthly entries, contains all the reported cities and states, since 2015, there are multiple sub-types, see below.
 
 | name | type | notes |
 |-----------------|---------|-----------------------------------------------------|
@@ -25,8 +25,14 @@ Monthly entries, contains all the reported cities and states, since 2015
 | state_ibge_code | integer | Registration state ibge code |
 | city | string | Registration city name, if empty then deaths_total are state-wise |
 | city_ibge_code | integer | Registration city ibge code, if empty then deaths_total are state-wise |
-| deaths_total | integer | Total death registered at date |
+| xxxxx_total | integer | Total registrations at date |
 | created_at | datetime | yyyy-mm-dd hh:mm<br>Approximated time the request to the server was made |
+
+#### civil_registry_deaths.csv
+Scrap of all-cause death registrations
+
+#### civil_registry_births.csv
+Scrap of birth certificates registrations
 
 ### civil_registry_covid_xxxxx.csv
 Scrap of natural-cause deaths at https://transparencia.registrocivil.org.br/especial-covid (from Causas Cardiacas)
@@ -42,7 +48,7 @@ Daily entries, there are multiple sub-types, see below.
 | state_ibge_code | integer | Ocurrence state ibge code |
 | city | string | [optional] Ocurrence city name |
 | city_ibge_code | integer | [optional] Ocurrence city ibge code |
-| places | string | [optional] place(s) where the deaths occurred, comma separated<br>(hospital, home, public, others) |
+| place | string | [optional] place(s) where the deaths occurred, + separated<br>(hospital, home, public, others) |
 | gender | string | [optional] F, M |
 | age_group | string | [optional] age group <br>(9-, 10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-99, 100+, NA) |
 | deaths_sars | integer | Number of SARS deaths (SRAG) |
@@ -82,6 +88,11 @@ Table (with gender and age group) for all the 27 brazilian states, since 2019
 Table (with gender and age group) for brazilian cities over 500,000 population and capitals (about 56), since 2019
 
 ## Changelog
+### 2021-04-10
+- Added `civil_registry_births.csv`
+- Renamed the `deaths_total` field on `civil_registry_deaths` to just `total`
+- Renamed the `births_total` field on `civil_registry_birts` to just `total`
+
 ### 2021-01-16
 Now includes year 2021
 
