@@ -90,6 +90,7 @@ Table (with gender and age group) for brazilian cities over 500,000 population a
 ## Changelog
 ### 2021-04-10
 - Added `civil_registry_births.csv` containing birth certificates
+- In order to improve the scrapping speed, the detailed covid scraps now reuse data from older scraps, it if detect no data change in broader queries (quarter, monthly, etc). So the created_at columns may reflect older dates since no data actually changed and was reused.
 
 ### 2021-01-16
 Now includes year 2021
