@@ -89,9 +89,7 @@ Table (with gender and age group) for brazilian cities over 500,000 population a
 
 ## Changelog
 ### 2021-04-10
-- Added `civil_registry_births.csv`
-- Renamed the `deaths_total` field on `civil_registry_deaths` to just `total`
-- Renamed the `births_total` field on `civil_registry_birts` to just `total`
+- Added `civil_registry_births.csv` containing birth certificates
 
 ### 2021-01-16
 Now includes year 2021
