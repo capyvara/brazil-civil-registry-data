@@ -87,6 +87,9 @@ Table (with gender and age group) for all the 27 brazilian states, since 2019
 #### civil_registry_covid_cities_detailed.csv
 Table (with gender and age group) for brazilian cities over 500,000 population and capitals (about 56), since 2019
 
+**Notice:**
+Normaly the repo is updated daily, except for the detailed scraps that normally is on a weekly basis (they take more than one day to scrap).
+
 ## Changelog
 ### 2021-04-10
 - Added `civil_registry_births.csv` containing birth certificates
